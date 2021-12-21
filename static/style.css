@@ -1,3 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@500&display=swap');
 body{
     background-color: #e5e5e5!important;
+    margin: 0;
+    font-family: 'Baloo Da 2';
+}
+.section{
+    background-color: #ffffff;
+    padding: 45px;
+    margin-top: 30px;
+    border: hidden;
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);;
+
+}
+label{
+    font-size: 24px;
+    font-weight: 500;
+    color: #562eff;
+}
+.btn , .btn-primary{
+    font-family: 'Baloo Da 2'!important;
+    background-color: #562eff;
+}
+.btn-primary:hover{
+    background-color: #4929d6;
+}
+h2{
+    color:#562eff;
+}
+li{
+    color: #464646;
+}
+h1{
+    color: #562eff;
+    text-align: center;
+}
+h6{
+    color: #464646;
+    text-align: center;
 }

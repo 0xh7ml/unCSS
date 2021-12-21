@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,35 +9,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script>
-        function xss() {
-            /* Get the text field */
-            var copyText = document.getElementById("myInput");
-
-            /* Select the text field */
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-            /* Copy the text inside the text field */
-            navigator.clipboard.writeText(copyText.value);
-
-            /* Alert the copied text */
-            alert("Copied the text: " + copyText.value);
-        } 
-    </script>
     <title>Output</title>
 </head>
-
 <body>
     <div class="container">
         <div class="row">
             <label for="html_text" class="form-label">Simplified CSS</label>
-            <textarea name="output_data" id="myInput" class="form-control" cols="30" rows="10">
-                {{output}}
-            </textarea>
-            <button onlclick="xss" class="btn btn-outline-success mt-3">Copy Code</button>
+            <textarea name="output_data" class="form-control" cols="20" rows="10">{{output}}</textarea>
+            <button class="btn btn-outline-danger mt-3">Copy Code</button>
         </div>
     </div>
 </body>
-
 </html>

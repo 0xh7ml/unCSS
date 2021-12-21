@@ -19,6 +19,6 @@ def taking_input():
         r = requests.post("https://uncss-online.com:443/api/uncss", headers=api_headers, data={"inputHtml": var_html , "inputCss": var_css}).text
         y = json.loads(r)
 
-        return render_template('output.html' , output=(y['outputCss']).replace(" ", ""))
+        return render_template('output.html' , output=(y['outputCss']))
 if __name__ == "__main__":
     app.run()
